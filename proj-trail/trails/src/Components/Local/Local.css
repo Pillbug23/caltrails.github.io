@@ -1,0 +1,23 @@
+.SearchItems{
+    background: #eceaea;
+    height: 294px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 480px;
+}
+
+.search {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -.2px;
+    font-weight: 700;
+    color: #414141;
+    font-family: Proxima Nova,Arial,sans-serif;
+    bottom: -110px;
+    max-width: 1540px;
+    margin: 0 auto 12px;
+    text-align: left;
+    width: calc(100% - 32px);
+    padding: 48px;
+}

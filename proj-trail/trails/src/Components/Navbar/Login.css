@@ -1,0 +1,208 @@
+.Login {
+    background: url("https://images.unsplash.com/photo-1583470790878-4f4f3811a01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFpbmZvcmVzdHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    height: 1000px;
+    display: flex;
+    background-size: cover;
+  }
+
+.Log {
+    height: 758px;
+    width: 480px;
+    display: flex;
+    background: white;
+    max-width: 580px;
+    padding: 24px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 24%), 0 0 8px 0 rgb(0 0 0 / 8%);
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+    
+}
+
+.photon {
+    width:350px;
+    height:80px;
+    align-self:center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family:Proxima Nova,Arial,sans-serif;;
+}
+
+.info {
+    align-self:center;
+    font-size: 16px;
+    color: #fff;
+    height: 38px;
+    width: 432px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0;
+    border-radius: 6px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    background-size: 24px;
+    background-position: 16px;
+    background-repeat: no-repeat;
+    background-color: #4184f3;
+    background-image: url(https://cdn-assets.alltrails.com/assets/packs/4edd1d14ce8a66bc49d0.svg);
+}
+
+.info2 {
+    position: relative;
+    top: 30px;
+    align-self:center;
+    font-size: 16px;
+    color: #fff;
+    height: 38px;
+    width: 432px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0;
+    border-radius: 6px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    background-size: 24px;
+    background-position: 16px;
+    background-repeat: no-repeat;
+    background-color: #3c5997;
+    background-image: url(https://cdn-assets.alltrails.com/assets/packs/ff0568befff228cd9af8.svg);
+}
+
+.info3 {
+    position: relative;
+    top: 60px;
+    align-self:center;
+    font-size: 16px;
+    color: #fff;
+    height: 38px;
+    width: 432px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0;
+    border-radius: 6px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    background-size: 24px;
+    background-position: 16px;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-image: url(https://cdn-assets.alltrails.com/assets/packs/17d7f1caae883a344879.svg);
+}
+
+.searchInputsed {
+    display: flex;
+    margin: 13px;
+  }
+  
+  .searched input {
+    position: relative;
+    background-color: white;
+    font-size: 16px;
+    height: 43px;
+    width: 490px;
+    bottom: 20px;
+    font-family: Proxima Nova,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    font-family: Proxima Nova, Arial, sans-serif !important;
+    border-radius: 8px;  
+    color: #414141;
+    outline: none;
+    border: 1px solid rgba(63, 52, 52, 0.5);
+  }
+  
+  .searcheed {
+    text-align:center;
+    font-size: 16px;
+    color: #fff;
+    height: 38px;
+    width: 372px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0;
+    border-radius: 14px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    background-size: 24px;
+    background-position: 16px;
+    background-color: #69a041;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+  
+  
+  .searchIconed svg {
+    font-size: 25px;
+  }
+
+  
+  
+.timeAgog {
+    position: relative;
+    top: 10px;
+    margin: auto;
+    font-size:14px;
+}
+
+.donthave {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size:14px;
+    
+}
+
+.forgot {
+    position: relative;
+    font-size:14px;
+    color: green;
+    font-weight: 300;
+    bottom: 60px;
+}
+
+.line {
+    position: relative;
+    height: 1%;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    bottom: 30px;
+}
+
+.fix {
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #e02020;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
