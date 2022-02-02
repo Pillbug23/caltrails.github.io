@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/caltrails.github.io/static/css/main.27db9593.css",
+    "main.js": "/caltrails.github.io/static/js/main.e9d7c99d.js",
+    "static/js/787.bd28f543.chunk.js": "/caltrails.github.io/static/js/787.bd28f543.chunk.js",
+    "static/media/bridge2.jpg": "/caltrails.github.io/static/media/bridge2.fb07c29df0c6d6e34c88.jpg",
+    "static/media/logo.png": "/caltrails.github.io/static/media/logo.07b08bf19282535829b7.png",
+    "static/media/arrow.png": "/caltrails.github.io/static/media/arrow.3f0cebc1bd33feb237ca.png",
+    "static/media/slick.svg": "/caltrails.github.io/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/caltrails.github.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/caltrails.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/caltrails.github.io/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/caltrails.github.io/index.html",
+    "main.27db9593.css.map": "/caltrails.github.io/static/css/main.27db9593.css.map",
+    "main.e9d7c99d.js.map": "/caltrails.github.io/static/js/main.e9d7c99d.js.map",
+    "787.bd28f543.chunk.js.map": "/caltrails.github.io/static/js/787.bd28f543.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27db9593.css",
+    "static/js/main.e9d7c99d.js"
+  ]
+}
