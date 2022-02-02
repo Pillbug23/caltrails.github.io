@@ -20,9 +20,6 @@ db2.loadDatabase();
 
 var port = process.env.PORT || 5000;
 
-const buildPath = path.join(__dirname, '..', 'build');
-app.use(express.static(buildPath));
-
 app.post('/register', (req,res)=> {
     const store = req.body
     console.log(req.body);
