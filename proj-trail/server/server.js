@@ -20,7 +20,7 @@ db2.loadDatabase();
 
 var port = process.env.PORT || 3001;
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.resolve(__dirname, "../trails/src")));
 
 
 app.get('/*', (req, res) => {
