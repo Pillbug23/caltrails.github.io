@@ -18,5 +18,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Pillbug23/caltrails.github.io.git"
-  }
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ]
 }
