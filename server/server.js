@@ -18,13 +18,10 @@ const db2 = new Datastore('favorites.db');
 db.loadDatabase();
 db2.loadDatabase();
 
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 5000;
 
-app.use(express.static(path.resolve(__dirname, "../trails/src/build")));
-
-app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, '../trails/src/build', 'index.html'));
-});
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
 
 app.post('/register', (req,res)=> {
     const store = req.body
