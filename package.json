@@ -14,5 +14,5 @@
 "script": {
     "start": "node server.js",
     "heroku-postbuild": "cd trails && npm install && npm run build"
-  },
+  }
 }
