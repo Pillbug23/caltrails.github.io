@@ -22,9 +22,8 @@ var port = process.env.PORT || 3001;
 
 app.use(express.static(path.resolve(__dirname, "../trails/build")));
 
-
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'App.js'));
+app.get('*', function(request, response) {
+  response.sendFile(path.resolve(__dirname, '../trails/build', 'index.html'));
 });
 
 app.post('/register', (req,res)=> {
