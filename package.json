@@ -13,7 +13,7 @@
   },
 "script": {
     "start": "node server.js",
-    "heroku-postbuild": "cd react-ui/ && npm install && npm run build"
+    "heroku-postbuild": "cd react-ui/src && npm install && npm run build"
   },
   "repository": {
     "type": "git",

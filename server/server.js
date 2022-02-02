@@ -20,10 +20,10 @@ db2.loadDatabase();
 
 var port = process.env.PORT || 3001;
 
-app.use(express.static(path.resolve(__dirname, "../trails/build")));
+app.use(express.static(path.resolve(__dirname, "../trails/src/build")));
 
 app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, '../trails/build', 'index.html'));
+  response.sendFile(path.resolve(__dirname, '../trails/src/build', 'index.html'));
 });
 
 app.post('/register', (req,res)=> {
