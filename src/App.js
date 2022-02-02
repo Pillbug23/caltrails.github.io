@@ -24,7 +24,7 @@ function App() {
             <>
             <Outlet />
             <ImageSlider></ImageSlider>      
-            <SearchBar placeholder="     Search by city..."></SearchBar>           
+            <SearchBar placeholder=" Backend not supported on github, attending heroku..."></SearchBar>           
             <Local></Local>           
             <Category></Category>           
             <img className='shape' style={{top: '860px'}} src={pic}></img>           
