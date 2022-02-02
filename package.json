@@ -9,9 +9,10 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.13",
+    "react-scripts": "^5.0.0",
     "tslib": "^2.3.1"
   },
-"script": {
+  "script": {
     "start": "node server.js",
     "heroku-postbuild": "cd react-ui/src && npm install && npm run build"
   },
