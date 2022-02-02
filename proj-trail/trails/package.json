@@ -2,7 +2,8 @@
   "name": "trails",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://caltrails.github.io",
+  "proxy": "http://localhost:3001",
+  "homepage": "https://pillbug23.github.io/caltrails.github.io/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",

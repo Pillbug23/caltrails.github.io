@@ -20,6 +20,13 @@ db2.loadDatabase();
 
 var port = process.env.PORT || 3001;
 
+app.use(express.static(path.join(__dirname, 'build')));
+
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'App.js'));
+});
+
 app.post('/register', (req,res)=> {
     const store = req.body
     console.log(req.body);
