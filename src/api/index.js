@@ -8,7 +8,6 @@ export const getPlacesData = async (sw) => {
               lat: sw.lat,
               limit: '10',
               lon: sw.lng,
-              'q-state_cont': 'California',
               radius: '7',
               'q-activities_activity_type_name_eq': 'hiking'
             },
