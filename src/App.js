@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar/Navbar';
 import YoutubeBackground from 'react-youtube-background'
 import {BrowserRouter as Router,Link,Switch,Route, Routes,Outlet,Navigate,NavLink,useNavigate} from 'react-router-dom';
 import Signup from './Components/Navbar/Signup';
-import Login from './Components/Navbar/Login';
 import Browser from './Components/Trail/Browser';
 import Saved from './Components/Navbar/Saved';
 import Footer from './Components/Footer/Footer';
@@ -23,7 +22,7 @@ function App() {
             <>       
             <YoutubeBackground 
             className="intro"
-              videoId={"qRTVg8HHzUo"} // 0trXUYYeNHY
+              videoId={"xNN7iTA57jM"} // 0trXUYYeNHY
               playerOptions={
                 {autoplay: 1,
 			          controls: 0,
@@ -50,7 +49,6 @@ function App() {
             <Route element={<Outlet />}>
             <Route path='/Profile' element={<Profile />}></Route> 
             <Route path='/Signup' element={<Signup />}></Route> 
-            <Route path='/Login' element={<Login />} ></Route>
             <Route path='/Saved' element={<Saved />}></Route>
             <Route path='/Browser' element={<Browser />}></Route>
           </Route>     
