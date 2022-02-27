@@ -6,10 +6,9 @@ export const getPlacesData = async (sw) => {
           {
             params: {
               lat: sw.lat,
-              limit: '10',
+              limit: '12',
               lon: sw.lng,
-              'q-state_cont': 'California',
-              radius: '7',
+              radius: '10',
               'q-activities_activity_type_name_eq': 'hiking'
             },
             headers: {
@@ -27,7 +26,7 @@ export const getWeatherData = async (lat, lng) => {
   try {
     const {data} = await axios.get('https://community-open-weather-map.p.rapidapi.com/find', 
     {
-    params: {lon: lng,lat: lat,},
+    params: {lon: lng,lat: lat},
     headers: {
       'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
       'x-rapidapi-key': '19c3948709msh555b77273198f2ap102f38jsn78f1f9fd6b2e'

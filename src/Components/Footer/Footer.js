@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 import {
     Box,
     Container,
@@ -7,14 +8,22 @@ import {
     FooterLink,
     Heading,
   } from "./FooterStyles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
     
   const Footer = () => {
     return (
       <Box>
-        <h1 style={{ color: "#f5d24b", 
+        <h1 style={{ color: "#fff", 
                      textAlign: "left", 
-                     marginTop: "-50px" }}>
-          Calbear Trails
+                     marginTop: "-55px",
+                     marginLeft: '-30px' }}>
+          Calbear Trails 
         </h1>
         <Container>
           <Row>
@@ -33,44 +42,54 @@ import {
             </Column>
             <Column>
               <Heading>Contact Us</Heading>
-              <FooterLink href="#">Support</FooterLink>
+              <FooterLink href="#" aria-label='Instagram'>Support</FooterLink>
               <FooterLink href="#">Members</FooterLink>
               <FooterLink href="#">Forum</FooterLink>
               <FooterLink href="#">BearTrail Gear</FooterLink>
             </Column>
             <Column>
               <Heading>Social Media</Heading>
-              <FooterLink href="https://cornhub.website/">
+              <FooterLink href="#">
                 <i className="fab fa-facebook-f">
                   <span style={{ marginLeft: "10px" }}>
                     Facebook
                   </span>
                 </i>
               </FooterLink>
-              <FooterLink href="https://www.quora.com/Why-doesnt-Ash-Ketchum-from-the-Pokemon-series-age">
+              <FooterLink href="#">
                 <i className="fab fa-instagram">
                   <span style={{ marginLeft: "10px" }}>
                     Instagram
                   </span>
                 </i>
               </FooterLink>
-              <FooterLink href="https://en.wikipedia.org/wiki/Birds_Aren%27t_Real">
+              <FooterLink href="#">
                 <i className="fab fa-twitter">
                   <span style={{ marginLeft: "10px" }}>
                     Twitter
                   </span>
                 </i>
               </FooterLink>
-              <FooterLink href="https://www.youtube.com/watch?v=gkTb9GP9lVI">
+              <FooterLink href="#">
                 <i className="fab fa-youtube">
                   <span style={{ marginLeft: "10px" }}>
                     Youtube
                   </span>
                 </i>
               </FooterLink>
+  
             </Column>
           </Row>
         </Container>
+        <h1 className="copy" style={{ color: "#fff"}}>BearTrails © 2022</h1>
+        <h1 style={{ color: "#fff", marginBottom: "-60px", alignItems:"right"}}>
+          <div className="social">
+            <FontAwesomeIcon icon={faYoutube} size="1x" />
+            <FontAwesomeIcon icon={faFacebook} size="1x" />
+            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <FontAwesomeIcon icon={faInstagram} size="1x" />
+          </div>
+        </h1>
       </Box>
     );
   };

@@ -2,11 +2,12 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 80px;
-  background: black;
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
   position: relative;
-  top: 700px;
+  top: 200px;
   bottom: 0;
-  width: 100%;
+  width: 100%
   
    
   @media (max-width: 1000px) {
@@ -34,8 +35,8 @@ export const Column = styled.div`
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 
-                         minmax(185px, 1fr));
-  grid-gap: 20px;
+                         minmax(125px, 1fr));
+  grid-gap: 110px;
    
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, 
@@ -50,7 +51,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
    
   &:hover {
-      color: green;
+      color: #FFA7A6;
       transition: 200ms ease-in;
   }
 `;

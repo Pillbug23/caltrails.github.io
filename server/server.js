@@ -42,8 +42,16 @@ app.post('/login',(req,res)=> {
 
 app.post('/add', (req,res)=> {
     const store = req.body
+    const names = req.body.name
+    db2.find({name: names }, function (err, result) {
+        console.log(result.length)
+        if (result.length === 1) {
+            db2.update({name: names }, {$set: {shalong:req.body.shalong}})
+        } else {
+            db2.insert(store)
+        }
+    });
     console.log(req.body);
-    db2.insert(store)
 })
 
 app.get("/favorite", function (req, res) {

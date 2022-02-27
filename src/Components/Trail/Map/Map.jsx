@@ -1,15 +1,10 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import {Paper,Typography,useMediaQuery} from '@material-ui/core';
-import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
-import Rating from '@material-ui/lab/Rating';
-
-import mapStyles from './mapStyles';
+import {Paper,Typography} from '@material-ui/core';
 import useStyles from './styles';
 
 const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weatherData}) => {
     const classes = useStyles();
-    const isDesktop = useMediaQuery('(min-width:600px)');
 
     return (
         <div className={classes.mapContainer}>
@@ -19,7 +14,7 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weathe
                 center={coordinates}
                 defaultZoom={14}
                 margin= {[50,50,50,50]}
-                options={{ disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
+                options={{ disableDefaultUI: true, zoomControl: true}}
                 onChange={(e) => {
                     setCoordinates({lat:e.center.lat,lng:e.center.lng});
                     setBounds({ne: e.marginBounds.ne, sw: e.marginBounds.sw});
@@ -34,15 +29,9 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weathe
                         key={i}
                     >
                         {
-                            !isDesktop ? (
-                                <LocationOnOutlinedIcon />
-                            ) : (
+                             (
                                 <Paper elevation={3} className={classes.paper}>
                                     <Typography className={classes.typography} variant="subtitle2" gutterBottom> {place.name}</Typography>
-                                    <img
-                                        className={classes.pointer}
-                                        src={place.photo ? place.photo.images.large.url : 'https://images.unsplash.com/photo-1517210067403-d86a5703516f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2FuJTIwZnJhbmNpc2NvJTIwYmF5JTIwYXJlYXxlbnwwfHwwfHw%3D&w=1000&q=80'}
-                                    />
                                 </Paper>
                             )
                         }

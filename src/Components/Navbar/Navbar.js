@@ -3,7 +3,7 @@ import { MenuItems } from "./MenuItems";
 import logo from './logo.png';
 import './Navbar.css';
 import {NavLink} from "react-router-dom";
-
+import AuthenticationButton from "./Authentication";
 
 class Navbar extends React.Component {
     state = {clicked: false}
@@ -16,14 +16,18 @@ class Navbar extends React.Component {
     render() {
         return(
             <nav className="NavbarItems">
+                <div className="container">
+                    <div className="menu-icon">
+                        <img src={logo} width = "50" height="50"/>
+                    </div>
 
-                <div className="menu-icon">
-                    <img src={logo} height={32} width={39} />
+                    <NavLink to={'/'} activeClassName="navbar-logo" className={'navbar-logo'} >
+                        BearTrails
+                    </NavLink>
                 </div>
-                
-                <h1 className="navbar-logo">Calbear Trails</h1>
 
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                <div className='container2'>
+                <ul className='nav-menu'>
                     {MenuItems.map((item,index) => {
                         return (
                             <li key={index}>
@@ -34,6 +38,10 @@ class Navbar extends React.Component {
                         )
                     })}
                 </ul>
+                <div className="container3">
+                    <AuthenticationButton/>
+                </div>
+                </div>
             </nav>
         )
     }

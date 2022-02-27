@@ -1,11 +1,29 @@
 import React, {useState} from 'react';
 import style from './Login.css';
 import Axios from 'axios';
+import { useAuth0 } from "@auth0/auth0-react";
 
-function Signup() {
+const Signup = () => {
   const [emailReg, EmailReg] = useState('')
   const [passReg, PassReg] = useState('')
   const [LoginStatus, setLoginStatus] = useState('')
+  
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { isAuthenticated } = useAuth0();
+  const [Logged, isLogged] = useState("");
+  const [textColor, setTextColor] = useState('black');
+  const [textColor2, setTextColor2] = useState('black');
+
+  const highlight2 = () => {
+    setTextColor2('#FE4880');
+    setTextColor('black');
+  }
+
+  const highlight = () => {
+    setTextColor('#FE4880');
+    setTextColor2('black');
+  }
 
   const login = () => {
     Axios.post('http://localhost:5000/login', {
@@ -23,32 +41,37 @@ function Signup() {
   return (
     <div className="Login">    
       <div className='Log'>
-      <div class="photon"> Log in and get moving</div>
+      <div class="photon"> Sign into your account</div>
         <div class ='searched'>
-          <div className="searchInputsed">
-                    <input type="text" onChange={(e)=> {EmailReg(e.target.value)}} placeholder={'Email'}/>
-                    <div className="searchIconed"></div>
-                </div>
-                <div className="dataResult"></div>
+          <div className='display'style={{ color:textColor2}}>Email:</div>
+            <div className="searchInputsed" onClick ={highlight2}>
+              <input type="text" onChange={(e)=> {EmailReg(e.target.value)}} />
+            </div>
         </div>
         <div class ='searched'>
-          <div className="searchInputsed">
-                    <input type="text" onChange={(e)=> {PassReg(e.target.value)}} placeholder={'Password'}/>
+        <div className='display' style={{ color:textColor}} >Password:</div>
+          <div className="searchInputsed" onClick ={highlight}>
+                    <input type="text" onChange={(e)=> {PassReg(e.target.value)}} />
                     <div className="searchIconed"></div>
                 </div>
-                <div className="dataResult"></div>
         </div>
         <div className='fix'>{LoginStatus}</div>
-        <button className='searcheed' onClick={login}>
+        <button className='button-40' style = {{padding: 20,marginBottom: '50px',marginTop: '-30px'}} onClick={login}>
           Log In
         </button>
-        <div className='forgot'> Forgot your password? </div>
         <span className='line'></span>
-        <button class="info">Login with Google</button>
-        <button class="info2">Login with Facebook</button>
-        <button class="info3">Login with Apple</button>
-        <div class="timeAgog">By continuing to use BearTrails, you agree to sign your life away and agree to our Terms of Service</div>
-        <div class='donthave'>Need an account? Sign Up Here</div>
+        <div class="photon"> Sign in w/ authentication</div>
+        <button className='button-36' onClick={() =>
+        loginWithRedirect({screen_hint: 'signup',})}
+        style={{ padding: 20, marginBottom: "30px" }}>
+          Log In
+        </button>
+        <button className='button-36' 
+        onClick={() =>
+        logout({returnTo: window.location.origin,})}
+        style={{ padding: 20}}>
+          Log Out
+        </button>
       </div>
     </div>
   );

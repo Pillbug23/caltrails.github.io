@@ -27,7 +27,7 @@ function Browser() {
         getWeatherData(coordinates.lat,coordinates.lng)
         .then((data) => setWeatherData(data));
 
-        getPlacesData(bounds.sw)
+        getPlacesData(bounds.sw,bounds.ne)
         .then((data) => {
             setPlaces(Object.values(data));
             setIsLoading(false);

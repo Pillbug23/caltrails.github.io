@@ -37,56 +37,69 @@
   }
 }
 
-.shape {
-  position:relative;
-  top: '100px';
-  bottom: '0px';
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
+.intro {
+  height: 850px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.bay {
-  position:relative;
-  color:white;
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.13;
-  letter-spacing: normal;
-  font-size: 96px;
-  line-height: 96px;
-  right: 650px;
-  bottom: 310px;
+.slogan {
+  color: #fff; 
+  font-size: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  margin: auto;
+  margin-top: 100px; 
 }
 
-.bay2 {
-  color:#f5d24b;
-  position:relative;
-  font-size: 80px;
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.13;
-  letter-spacing: normal;
-  bottom: 280px;
-  padding-right: 800px;
+.slogansub {
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin-top: 8px; 
 }
 
-.bay3{
-  position:relative;
-  font-size: 17px;
-  font-weight: 400px;
-  color: white;
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.13;
-  letter-spacing: normal;
-  bottom: 170px;
-  text-align: left;
-  padding-left: 100px;
-  padding-right: 900px;
+/* CSS */
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
 }
 
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .75rem 1.5rem;
+  }
+}

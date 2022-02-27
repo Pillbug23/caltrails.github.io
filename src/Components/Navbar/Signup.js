@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import style from './Signup.css';
 import Axios from 'axios';
+import validation from './validation';
 
 function Signup() {
   
@@ -9,6 +10,16 @@ function Signup() {
   const [emailReg, setEmailReg] = useState('')
   const [passReg, setPassReg] = useState('')
   const [signStatus, setSignStatus] = useState('')
+
+  const [errors, setErrors] = useState({})
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    setErrors(validation(firstReg,lastReg,emailReg,passReg));
+    if (firstReg && lastReg && emailReg && passReg) {
+      register();
+    }
+  }
 
   const register = () => {
     Axios.post('http://localhost:5000/register', {
@@ -25,47 +36,38 @@ function Signup() {
   return (
     <div className="Signup">    
       <div className='Sign'>
-      <div class="photo"> Create an account</div>
-        <button class="info">Login with Google</button>
-        <button class="info2">Login with Facebook</button>
-        <button class="info3">Login with Apple</button>
-        <span className='linee'></span>
-        <div class ='searche'>
-          <div className="searchInputse">
-                    <input type="text" onChange={(e)=> {setFirstNameReg(e.target.value)}} placeholder={'First name'} />
-                    <div className="searchIcone"></div>
-                </div>
-                <div className="dataResult"></div>
-        </div>
-        <div class ='searche'>
-          <div className="searchInputse">
-                    <input type="text" onChange={(e)=> {setLastNameReg(e.target.value)}} placeholder={'Last name'}/>
-                    <div className="searchIcone"></div>
-                </div>
-                <div className="dataResult"></div>
-        </div>
-        <div class ='searche'>
-          <div className="searchInputse">
-                    <input type="text" onChange={(e)=> {setEmailReg(e.target.value)}} placeholder={'Email'}/>
-                    <div className="searchIcone"></div>
-                </div>
-                <div className="dataResult"></div>
-        </div>
-        <div class ='searche'>
-          <div className="searchInputse">
-                    <input type="text" onChange={(e)=> {setPassReg(e.target.value)}} placeholder={'Password'}/>
-                    <div className="searchIcone"></div>
-                </div>
-                <div className="dataResult"></div>
-        </div>
-        <button className='searchee'  onClick={()=>{register()}}>
-          Sign Up
-        </button>
-        <div className='fixe'>{signStatus}</div>
-        <div class="timeAgo">By continuing to use BearTrails, you agree to sign your life away and agree to our Terms of Service</div>
+      <h2 class="photo"> Create Account </h2>
+        <form class ='form-wrapper'>
+            <div className="first">
+              <div className="label"> First </div>
+              <input className='input' 
+              type="text"
+              onChange={(e)=> {setFirstNameReg(e.target.value)}} />
+            </div>
+            {errors.first && <p className="error">{errors.first}</p>}
+            <div className="last">
+              <div className="label"> Last </div>
+              <input className='input' type="text" onChange={(e)=> {setLastNameReg(e.target.value)}} />
+            </div>
+            {errors.last && <p className="error">{errors.last}</p>}
+            <div className="email">
+              <div className="label"> Email </div>
+              <input className='input' type="text" onChange={(e)=> {setEmailReg(e.target.value)}} />
+            </div>
+            {errors.email && <p className="error">{errors.email}</p>}
+            <div className="password">
+              <div className="label"> Password </div>
+              <input className='input' type="text" onChange={(e)=> {setPassReg(e.target.value)}} />
+            </div>
+            {errors.password && <p className="error">{errors.password}</p>}
+            <button className='submit' onClick={handleFormSubmit}>
+              Sign Up
+            </button>
+            <div className='fixe'>{signStatus}</div>
+            <div class="timeAgo">By continuing to use BearTrails, you agree to our Terms of Service and subject to newsletters</div>
+        </form>
       </div>
     </div>
-
   );
 }
 

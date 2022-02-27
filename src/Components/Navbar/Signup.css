@@ -1,191 +1,85 @@
 .Signup {
-    background: url("https://wallpaperaccess.com/full/622263.jpg");
-    height: 1000px;
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    height: 918px;
+    width: 100%;
     display: flex;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
   }
 
 .Sign {
-    height: 758px;
+    height: 808px;
     width: 480px;
-    display: flex;
     background: white;
     max-width: 580px;
-    padding: 24px;
+    padding: 30px;
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 24%), 0 0 8px 0 rgb(0 0 0 / 8%);
     border-radius: 16px;
-    margin: auto;
-    margin-top: 50px;
-    flex-direction: column;
-    
+    box-sizing: border-box;  
 }
 
 .photo {
-    width:250px;
-    height:80px;
-    align-self:center;
+    font-family:monteserrat,sans-serif;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 24px;
     font-weight: 600;
     font-family:Proxima Nova,Arial,sans-serif;;
 }
 
-.info {
-    align-self:center;
-    font-size: 16px;
-    color: #fff;
-    height: 38px;
-    width: 432px;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    background: transparent;
-    padding: 0;
-    border-radius: 6px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 700;
-    background-size: 24px;
-    background-position: 16px;
-    background-repeat: no-repeat;
-    background-color: #4184f3;
-    background-image: url(https://cdn-assets.alltrails.com/assets/packs/4edd1d14ce8a66bc49d0.svg);
+.label {
+  left: 2%;
+  display: flex;
+  margin: 0 0 0 0;
 }
 
-.info2 {
-    position: relative;
-    top: 30px;
-    align-self:center;
-    font-size: 16px;
-    color: #fff;
-    height: 38px;
-    width: 432px;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    background: transparent;
-    padding: 0;
-    border-radius: 6px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 700;
-    background-size: 24px;
-    background-position: 16px;
-    background-repeat: no-repeat;
-    background-color: #3c5997;
-    background-image: url(https://cdn-assets.alltrails.com/assets/packs/ff0568befff228cd9af8.svg);
+.first,
+.last,
+.email,
+.password {
+  margin: 10px;
+  color: #969292;
+  font-size: 20px;
 }
 
-.info3 {
-    position: relative;
-    top: 60px;
-    align-self:center;
-    font-size: 16px;
-    color: #fff;
-    height: 38px;
-    width: 432px;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    background: transparent;
-    padding: 0;
-    border-radius: 6px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 700;
-    background-size: 24px;
-    background-position: 16px;
-    background-repeat: no-repeat;
-    background-color: #000;
-    background-image: url(https://cdn-assets.alltrails.com/assets/packs/17d7f1caae883a344879.svg);
-}
-
-.searchInputse {
-    display: flex;
-    position: relative;
-    top: 100px;
-    margin: 14px;
-  }
-  
-  .searche input {
-    background-color: white;
-    font-size: 16px;
-    height: 43px;
-    width: 490px;
-    margin: auto;
-    font-family: Proxima Nova,Arial,sans-serif;
-    font-weight: 400;
-    line-height: 1.33;
-    font-family: Proxima Nova, Arial, sans-serif !important;
-    border-radius: 8px;  
-    color: #414141;
-    outline: none;
-    border: 1px solid rgba(63, 52, 52, 0.5);
-  }
-  
-  .searchee {
-    top: 80px;
-    position: relative;
-    text-align:center;
-    font-size: 16px;
-    color: #fff;
-    height: 38px;
-    width: 372px;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    background: transparent;
-    padding: 0;
-    border-radius: 14px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 700;
-    background-size: 24px;
-    background-position: 16px;
-    background-color: #69a041;
-    margin: auto;
-  }
-  
-  
-  .searchIcone svg {
-    font-size: 25px;
-  }
-
-  
-  
-.timeAgo {
-    position: relative;
-    top: 40px;
-    margin: auto;
-    font-size:14px;
-    
-}
-
-.linee {
-  position: relative;
-  height: 1%;
-  border-top: 1px solid #e6e6e6;
+.input {
+  height: 32px;
+  font-size: 20px;
+  outline: none;
   width: 100%;
-  top: 90px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: 2px solid black;
+  margin-bottom: 12px;
 }
 
+.error {
+  color: red;
+}
+
+.submit {
+  display: flex;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  padding: 12px 60px;
+  background: black;
+  box-shadow: rgba(0,0,0,0.3) 0px 19px 38px rgba(0,0,0,0.22) 0px 15px 12px;
+  margin: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.timeAgo {
+  margin-top: 10px;
+}
 .fixe {
-  padding-top: 70px;
+  padding-top: 30px;
   font-size: 16px;
   color: #00ff0d;
   line-height: 24px;

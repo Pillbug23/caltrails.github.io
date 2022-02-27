@@ -48,6 +48,9 @@ function Saved() {
                       <Box display="flex" justifyContent="space-between"  mt={4}> 
                         <Typography component="legend" >City: {place.city}</Typography>
                       </Box>
+                      <Box display="flex" justifyContent="space-between"  mt={4}> 
+                        <Typography component="legend" >Favorites: {place.shalong} </Typography>
+                      </Box>
                     </CardContent>
                     </Card>
                 ))}

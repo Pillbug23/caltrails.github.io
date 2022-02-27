@@ -1,35 +1,78 @@
-.NavbarItems {
-    background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+.NavbarItems {  
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     height: 50px;
     display: flex;
     justify-content: center;
   }
 
+.container {
+  display: flex;
+  position: relative;
+  float: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -880px;
+  width: auto;
+}
+
+
+.container2 {
+  display: flex;
+  position: relative;
+  float: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+}
+
+.container3 {
+  display: flex;
+  position: relative;
+  float: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 885px;
+  width: auto;
+}
+
 .navbar-logo {
+    position: absolute;
     color: white;
-    font-size: 34px;
+    font-size: 38px;
     font-family:'Questrial';
-    font-weight: 100;
-    margin: auto;
-    margin-left: 0px;
+    font-weight: 500;
+    margin: auto;  
+    left: 55px;
+    top: 4px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .menu-icon {
-  margin: auto;
-  margin-right: 9px;
-  margin-left:30px;
+  top: 2px;
+  object-fit: cover; 
+  border-radius: 3px; 
+  transition: opacity 100ms ease-out 0s;
+  position: absolute;
 }
 
 .nav-menu {
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  right: -750px;
+  grid-template-columns: repeat(4,auto);
   grid-gap: 10px;
   list-style: none;
-  text-align: center;
   width: 70vw;
   justify-content: end;
   color: white;
-  margin-left: 14rem;
+  text-align: right;
+  position:absolute;
 }
 
 .nav-links {
@@ -40,7 +83,7 @@
 }
 
 .nav-links:hover {
-  background-color: orange;
-  border-radius: 4px;
+  background-color: #9EE4D9;
+  border-radius: 6px;
   transition: all 0.2s ease-out;
 }

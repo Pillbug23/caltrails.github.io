@@ -1,0 +1,17 @@
+.copy {
+    font-size: 18px;
+    text-align: left;
+    margin-top:20px;
+    left: 50px;
+    bottom: 10px;
+    position:absolute;
+}
+
+.social {
+    align-items: right;
+    margin-left: 1400px;
+    padding-left: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 35px;
+}
