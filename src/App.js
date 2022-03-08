@@ -7,12 +7,9 @@ import Browser from './Components/Trail/Browser';
 import Saved from './Components/Navbar/Saved';
 import Footer from './Components/Footer/Footer';
 import Profile from './Components/Navbar/Profile';
-import { useAuth0 } from "@auth0/auth0-react";
 import './App.css';
 
 function App() {
-  const { loginWithRedirect } = useAuth0();
-
   return (
     <Router>
     <div className="App">   

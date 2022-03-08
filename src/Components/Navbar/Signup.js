@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import style from './Signup.css';
+import './Signup.css';
 import Axios from 'axios';
 import validation from './validation';
 

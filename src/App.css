@@ -38,11 +38,12 @@
 }
 
 .intro {
-  height: 850px;
+  height: 920px;
   display: flex;
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: -200px;
 }
 
 .slogan {

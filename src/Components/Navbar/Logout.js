@@ -5,7 +5,7 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
 
   return (
-    <button className='button-64' onClick={() => logout({ returnTo: window.location.origin })}>
+    <button className='button-64' onClick={() => logout({ returnTo: 'https://pillbug23.github.io/caltrails.github.io/'})}>
       Log Out
     </button>
   );
