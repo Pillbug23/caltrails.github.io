@@ -1,7 +1,7 @@
 # caltrails.github.io
 [Demo](https://pillbug23.github.io/caltrails.github.io/)
 
-A simple web application that allows users to search for hiking trails near their location made with React.js. Auth0 framework allows unique authentication of login and access to user profile information. This projects uses the Google Maps API, TrailAPI, and weatherAPI; extraction of hiking trail data based on user's location. 
+A simple web application that allows users to search for hiking trails near their location made with React.js. Auth0 framework allows unique authentication of login and access to user profile information. This projects uses the Google Maps API, TrailAPI, and weatherAPI; extraction of hiking trail data based on user's location. User can favorite hikes and view saved trails. 
 
 # Technologies 
 
