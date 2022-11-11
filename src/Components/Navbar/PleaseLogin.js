@@ -1,5 +1,4 @@
 import React from "react";
-import LoginButton from "./LoginButton";
 import AuthenticationButton from "./Authentication";
 
 export const PleaseLogin = () => {

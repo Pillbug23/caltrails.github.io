@@ -81,7 +81,7 @@ function Signup() {
             />
           </div>
           {errors.password && <p className="error">{errors.password}</p>}
-          <button className="submit" onClick={handleFormSubmit}>
+          <button className="button-40" onClick={handleFormSubmit}>
             Sign Up
           </button>
           <div className="fixe">{signStatus}</div>
