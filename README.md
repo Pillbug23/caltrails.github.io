@@ -15,11 +15,6 @@ You should be able to see information logged when you favorite hikes in the expl
 
 # Technologies
 
-- Frontend: Javascript frameworks(React,MaterialUI)
-- # Backend: Nodejs, MongoDB
-
-# Technologies
-
 - Frontend: Javascript frameworks(React)
 - Backend: Nodejs,MongoDB
 - [Google Maps API](https://www.npmjs.com/package/google-map-react)
@@ -71,7 +66,7 @@ cd caltrails.github.io
 
 # Remove current origin repository
 git remote rm origin
-=======
+
 git remove remove origin
 
 ```
