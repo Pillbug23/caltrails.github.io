@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/caltrails.github.io/static/css/main.815bc75b.css",
-    "main.js": "/caltrails.github.io/static/js/main.24ca4c0d.js",
+    "main.js": "/caltrails.github.io/static/js/main.4c06990b.js",
     "static/js/787.14e32ee7.chunk.js": "/caltrails.github.io/static/js/787.14e32ee7.chunk.js",
     "static/media/logo.png": "/caltrails.github.io/static/media/logo.9973a8dc10ba3e474954.png",
     "index.html": "/caltrails.github.io/index.html",
     "main.815bc75b.css.map": "/caltrails.github.io/static/css/main.815bc75b.css.map",
-    "main.24ca4c0d.js.map": "/caltrails.github.io/static/js/main.24ca4c0d.js.map",
+    "main.4c06990b.js.map": "/caltrails.github.io/static/js/main.4c06990b.js.map",
     "787.14e32ee7.chunk.js.map": "/caltrails.github.io/static/js/787.14e32ee7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.815bc75b.css",
-    "static/js/main.24ca4c0d.js"
+    "static/js/main.4c06990b.js"
   ]
 }
