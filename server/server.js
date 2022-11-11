@@ -31,7 +31,6 @@ app.post('/login',(req,res)=> {
     const emaile = req.body.email
     const passworde = req.body.password
     db.find({email: emaile }, {password: passworde}, function (err, result) {
-        console.log(result.length)
         if (result.length > 0) {
             res.send({message: "Logged In! Successful Input" });
         } else {
@@ -44,7 +43,6 @@ app.post('/add', (req,res)=> {
     const store = req.body
     const names = req.body.name
     db2.find({name: names }, function (err, result) {
-        console.log(result.length)
         if (result.length === 1) {
             db2.update({name: names }, {$set: {shalong:req.body.shalong}})
         } else {

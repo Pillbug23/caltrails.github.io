@@ -7,13 +7,11 @@ import { Auth0Provider } from "@auth0/auth0-react";
 
 const domaine = process.env;
 const clientIde = process.env.REACT_APP_AUTH0_CLIENT_ID;
-console.log({domaine})
-console.log({clientIde})
 
 ReactDOM.render(
   <Auth0Provider
     domain="dev-ylrt4uen.us.auth0.com"
-    clientId="oQ1tGopqjYqRYJrSxUZdgU5SbNuNfTmJ"
+    clientId = "oQ1tGopqjYqRYJrSxUZdgU5SbNuNfTmJ"
     redirectUri={'https://pillbug23.github.io/caltrails.github.io/'}
   >
     <App />

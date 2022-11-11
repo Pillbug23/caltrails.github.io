@@ -1,17 +1,48 @@
-.copy {
-    font-size: 18px;
-    text-align: left;
-    margin-top:20px;
-    left: 50px;
-    bottom: 10px;
-    position:absolute;
+/*Footer*/
+/*Container for footer*/
+.bottom-footer {
+  background-color: #000;
+  bottom: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
-.social {
-    align-items: right;
-    margin-left: 1400px;
-    padding-left: 10px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 35px;
+/*Credits*/
+.built-credits {
+  text-align: center;
+}
+
+/*Credits*/
+.built-credits h3 {
+  font-size: 1.1em;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/*icon body*/
+.footer-icons-body {
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .footer-icons-body {
+    z-index: 1;
+    text-align: center;
+  }
+}
+.footer-icons {
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.icons {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 30px;
 }

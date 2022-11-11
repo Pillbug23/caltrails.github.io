@@ -2,17 +2,27 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import {Paper,Typography} from '@material-ui/core';
 import useStyles from './styles';
+import './markers.css';
 
-const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weatherData}) => {
-    const classes = useStyles();
+const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weatherData,zoom,living}) => {
+    const classes = useStyles();                               
+                                    
+    const AnyReactComponent = () => <div>
+                                        <div class='pin'></div>
+                                        <div class='pulse'></div>
+                                    </div>
 
+    const AnyReactComponentCurrent = () => <div>
+                                    <div class='pin2'></div>
+                                    <div class='pulse2'></div>
+                                </div>
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact 
                 bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY}} 
                 defaultCenter={coordinates} 
                 center={coordinates}
-                defaultZoom={14}
+                zoom={zoom}
                 margin= {[50,50,50,50]}
                 options={{ disableDefaultUI: true, zoomControl: true}}
                 onChange={(e) => {
@@ -21,6 +31,11 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weathe
                 }}
                 onChildClick={(child) => setChildClicked(child)}
             >
+            <AnyReactComponentCurrent
+            lat={living.lat}
+            lng={living.lng}
+            />
+    
                 {places?.map((place,i)=>(
                     <div
                         className={classes.markerContainer}
@@ -29,11 +44,15 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weathe
                         key={i}
                     >
                         {
-                             (
-                                <Paper elevation={3} className={classes.paper}>
-                                    <Typography className={classes.typography} variant="subtitle2" gutterBottom> {place.name}</Typography>
-                                </Paper>
-                            )
+                            <Paper  style = {{position:'relative', bottom:'80px' }} elevation={3} className={classes.paper}>
+                                <Typography className={classes.typography} variant="subtitle2" gutterBottom> {place.name}</Typography>
+                            </Paper>
+                        }
+                        {
+                            <AnyReactComponent
+                            lat={coordinates.lat}
+                            lng={coordinates.lng}
+                            />
                         }
                     </div>
                 ))}

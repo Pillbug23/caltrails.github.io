@@ -1,32 +1,32 @@
 .Signup {
-    background-image: linear-gradient(to right, #ff512f, #f09819);
-    height: 918px;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-  }
+  background-image: url("https://www.pcta.org/wp-content/uploads/2015/12/how-many-people-hike-the-pacific-crest-trail.jpg");
+  height: 918px;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
 
 .Sign {
-    height: 808px;
-    width: 480px;
-    background: white;
-    max-width: 580px;
-    padding: 30px;
-    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 24%), 0 0 8px 0 rgb(0 0 0 / 8%);
-    border-radius: 16px;
-    box-sizing: border-box;  
+  height: 708px;
+  width: 480px;
+  background: white;
+  max-width: 580px;
+  padding: 30px;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 24%), 0 0 8px 0 rgb(0 0 0 / 8%);
+  border-radius: 16px;
+  box-sizing: border-box;
 }
 
 .photo {
-    font-family:monteserrat,sans-serif;
-    color: black;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: 600;
-    font-family:Proxima Nova,Arial,sans-serif;;
+  font-family: monteserrat, sans-serif;
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Proxima Nova, Arial, sans-serif;
 }
 
 .label {
@@ -41,7 +41,7 @@
 .password {
   margin: 10px;
   color: #969292;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .input {
@@ -67,7 +67,7 @@
   color: white;
   padding: 12px 60px;
   background: black;
-  box-shadow: rgba(0,0,0,0.3) 0px 19px 38px rgba(0,0,0,0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin: auto;
   outline: none;
   border: none;
@@ -78,6 +78,7 @@
 .timeAgo {
   margin-top: 10px;
 }
+
 .fixe {
   padding-top: 30px;
   font-size: 16px;

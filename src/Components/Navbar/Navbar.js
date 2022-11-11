@@ -1,50 +1,43 @@
-import React from 'react';
+import React from "react";
 import { MenuItems } from "./MenuItems";
-import logo from './logo.png';
-import './Navbar.css';
-import {NavLink} from "react-router-dom";
+import logo from "./logo.png";
+import "./Navbar.css";
+import useStyles from "./Navbarstyles.js";
+import { NavLink } from "react-router-dom";
+import { Toolbar, Typography, AppBar } from "@material-ui/core";
 import AuthenticationButton from "./Authentication";
 
-class Navbar extends React.Component {
-    state = {clicked: false}
+function Navbar() {
+  const classes = useStyles();
 
-    handleClick = () => {
-        this.setState({clicked: !this.state.clicked})
-        
-    }
+  return (
+    <AppBar position="static">
+      <Toolbar className={classes.toolbar}>
+        <NavLink to={"/"}>
+          <Typography variant="h5" className={classes.title}>
+            <img src={logo} alt="logo" width="55" height="55" />
+          </Typography>
+        </NavLink>
 
-    render() {
-        return(
-            <nav className="NavbarItems">
-                <div className="container">
-                    <div className="menu-icon">
-                        <img src={logo} width = "50" height="50"/>
-                    </div>
-
-                    <NavLink to={'/'} activeClassName="navbar-logo" className={'navbar-logo'} >
-                        BearTrails
-                    </NavLink>
-                </div>
-
-                <div className='container2'>
-                <ul className='nav-menu'>
-                    {MenuItems.map((item,index) => {
-                        return (
-                            <li key={index}>
-                                 <NavLink to={item.url} activeClassName="is-active" className={item.cName} style={{position: 'relative', right: 0, top: 13}}>
-                                     {item.title}
-                                 </NavLink>
-                            </li>
-                        )
-                    })}
-                </ul>
-                <div className="container3">
-                    <AuthenticationButton/>
-                </div>
-                </div>
-            </nav>
-        )
-    }
+        <ul className="nav-menu">
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <NavLink
+                  to={item.url}
+                  activeClassName="is-active"
+                  className={item.cName}
+                >
+                  {item.title}
+                </NavLink>
+              </li>
+            );
+          })}
+          <AuthenticationButton></AuthenticationButton>
+        </ul>
+      </Toolbar>
+    </AppBar>
+  );
 }
 
-export default Navbar
+export default Navbar;

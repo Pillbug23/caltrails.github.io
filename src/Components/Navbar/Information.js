@@ -1,12 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { useAuth0 } from '@auth0/auth0-react';
-import './Information.css';
+import { useAuth0 } from "@auth0/auth0-react";
+import "./Information.css";
 
 const Information = () => {
-    const { user } = useAuth0();
+  const { user } = useAuth0();
 
- const { name, picture, email } = user;
+  const { name, picture, email } = user;
 
   return (
     <div>

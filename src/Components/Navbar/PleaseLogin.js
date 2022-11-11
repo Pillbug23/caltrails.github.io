@@ -1,16 +1,15 @@
 import React from "react";
-import logo from './gifPath.gif'
+import LoginButton from "./LoginButton";
+import AuthenticationButton from "./Authentication";
 
 export const PleaseLogin = () => {
-    return (
-        <div className="background">
-            <h1>Profile</h1>
-            <img src={logo} alt="loading..." />
-            <p>
-            You are not logged into your account. Please log in.
-            </p>
-        </div>
-    );
-  };
-  
-  export default PleaseLogin;
+  return (
+    <div style={{ textAlign: "center", paddingBottom: 544, paddingTop: 100 }}>
+      <h1> This is a page that cannot be accessed.</h1>
+      <h2> Please Log In</h2>
+      <AuthenticationButton></AuthenticationButton>
+    </div>
+  );
+};
+
+export default PleaseLogin;

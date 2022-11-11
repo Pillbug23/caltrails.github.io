@@ -5,7 +5,11 @@ import "./button.css";
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button className='button-63' onClick={() => loginWithRedirect()}>Log In</button>;
+  return (
+    <button className="button-40" onPress={() => loginWithRedirect()}>
+      Log In
+    </button>
+  );
 };
 
 export default LoginButton;
