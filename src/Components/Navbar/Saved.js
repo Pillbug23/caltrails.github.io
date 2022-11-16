@@ -57,7 +57,7 @@ function Saved() {
           ))}
         </div>
       ) : (
-        <div style={{ paddingBottom: 642 }}>
+        <div style={{ paddingBottom: 942 }}>
           <h1 style={{ paddingTop: 50 }}>
             Please Log in to view and add favorited trails
           </h1>

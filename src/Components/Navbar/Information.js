@@ -8,7 +8,7 @@ const Information = () => {
   const { name, picture, email } = user;
 
   return (
-    <div styles={{ paddingTop: 30 }}>
+    <div styles={{ paddingTop: 30, paddingBottom: 300 }}>
       <div>
         <div>
           <img src={picture} alt="Profile" />
@@ -19,7 +19,7 @@ const Information = () => {
         </div>
       </div>
       <div>
-        <pre>{JSON.stringify(user, null, 2)}</pre>
+        <pre>{JSON.stringify(user, null, 3)}</pre>
       </div>
     </div>
   );
