@@ -61,6 +61,7 @@ function Browser() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            height: "110vh",
           }}
         >
           <Map
@@ -72,6 +73,7 @@ function Browser() {
             weatherData={weatherData}
             zoom={zoom}
             living={living}
+            options={{ scrollwheel: true }}
           />
         </Grid>
       </Grid>
