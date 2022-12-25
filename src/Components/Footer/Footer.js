@@ -24,7 +24,7 @@ function Footer() {
             </li>
             <li className="icons">
               <a
-                href="https://www.linkedin.com/in/phillip-ly-3a5730244/"
+                href="https://github.com/Pillbug23"
                 style={{ color: "white" }}
                 rel="linkedin-ref"
               >
